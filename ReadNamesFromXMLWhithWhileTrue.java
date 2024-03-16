@@ -16,7 +16,7 @@ public class ReadNamesFromXMLWhithWhileTrue {
 
         if(decoder != null){
             loadList(list, decoder);
-            //printList(list);
+            printList(list);
             // close the stream
             decoder.close();
         }// end if
@@ -58,7 +58,7 @@ public class ReadNamesFromXMLWhithWhileTrue {
         } // end tryu
         catch(ArrayIndexOutOfBoundsException e){
             eof = true;
-            printList(l);
+            //printList(l);
             //System.out.println("eof");
         }// end catch
         finally{
